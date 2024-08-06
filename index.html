@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a437438fcd.js" crossorigin="anonymous"></script>
+
+    <title>Lista To do</title>
 </head>
 <body>
-    
+    <div class="perfil">
+        <div id="fecha">Domingo 4 de Agosto </div>
+            <h1>Hola Valentina </h1>
+            <span>Vamos a cumplir tus metas</span>
+        </div>
+
+            <div class="agregar-tarea">
+                <input type="text" id="input" placeholder="agregar tarea">
+                <i id="enter" i class="fa-solid fa-circle-plus"></i>
+            </div>
+        
+        <div class="seccion-tarea">
+            <h2>Estas son tus tareas por hacer</h2>
+            <ul class="lista">
+                <li>
+                    <i class="fa-regular fa-circle" data="realizado" id="0"></i> <!---data es para la interaccion con Js-->
+                    <p class="text">Hacer la Tarea de Javascript</p>
+                    <i class="fa-solid fa-trash-can" data="eliminado" id="0"></i>
+                </li>
+            </ul>
+            
+        </div>
+
+    </div>
+    <script src="./js/main.js" ></script>
 </body>
 </html>
